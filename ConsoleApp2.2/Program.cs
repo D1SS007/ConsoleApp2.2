@@ -6,24 +6,15 @@ namespace ConsoleApp2._2
     {
         static void Main(string[] args)
         {
-            string stopWord = "exit";
-            string userInput;
+            string stopWord = "";                  
 
-            while(true)
+            while (stopWord != "exit")
             {
-                Console.WriteLine("Введите стоп слово");
-                userInput = Console.ReadLine();
-                
-                if (   userInput == stopWord)
-                {
-                    Console.WriteLine("Программа окончена");
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Программа продолжается");
-                }
-            }                           
+
+                Console.WriteLine("Программа продолжится пока не введете exit");
+
+                stopWord  = Console.ReadLine();
+            }                                       
         }
     }
 }
